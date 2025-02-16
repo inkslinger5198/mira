@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: Montserrat;
+}
+
+body {
+  background: var(--color-bg);
+}
+.App {
+  background: var(--color-bg);
+}
+/* Scrollbar.css */
+
+/* Track */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5a5a5b59;
+  border-radius: 12px;
+  height: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Track when the content is being scrolled */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Add a slight border around the scrollbar */
+::-webkit-scrollbar-track-piece {
+  border: 0px solid #2b2b2b4c;
+  height: 5px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--color-blue);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+  padding: 4rem 6rem;
+}
+
+.section__margin {
+  margin: 4rem 6rem;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.subheading {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-light);
+}
+
+.cta {
+  padding: 1rem 1.5rem;
+  background-color: var(--color-dark);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+}
+.cta:hover {
+  background-color: var(--color-blue);
+  cursor: pointer;
+  scale: 1.05;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 2001px) {
+  .heading {
+    font-size: 6rem;
+  }
+
+  .subheading {
+    font-size: 2.25rem;
+  }
+
+  .cta {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 2001px) and (min-width: 1500px) {
+  .heading {
+    font-size: 4rem;
+  }
+
+  .subheading {
+    font-size: 1.75rem;
+  }
+
+  .cta {
+    font-size: 1.25rem;
+    border-radius: 8px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.25rem;
+  }
+  .cta {
+    padding: 0.8rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+  .heading {
+    font-size: 1.75rem;
+  }
+
+  .subheading {
+    font-size: 1.15rem;
+  }
+  .cta {
+    padding: 0.8rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 320px) {
+  .section__padding {
+    padding: 4rem 2rem;
+  }
+
+  .section__margin {
+    margin: 4rem 2rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .cta {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
