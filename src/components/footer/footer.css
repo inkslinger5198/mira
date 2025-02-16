@@ -1,0 +1,134 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  font-family: var(--font-family);
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left img {
+  height: 5rem;
+  width: auto;
+}
+
+.footer-left img:hover {
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+.fal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.fah
+{
+    margin-bottom: 1rem;
+}
+.fab
+{
+    font-family: var(--font-family);
+}
+
+.fab:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: var(--color-lightest);
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--color-light);
+  text-align: center;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1500px) {
+    .footer-left img
+    {
+        height: 8rem;
+    }
+  .fah {
+    font-size: 2rem;
+  }
+  .fab {
+    font-size: 1.5rem;
+  }
+  .text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 840px) {
+    .footer
+    {
+        gap: 5rem;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    .footer-right
+    {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .fal
+    {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 320px) {
+}

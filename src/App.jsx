@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Footer, Navbar, News } from './components'
+import { Hero, Footer, Navbar, News, FAQ } from './components'
 import './App.css'
 
 const App = () => {
@@ -8,6 +8,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <News />
+      <FAQ />
+      <Footer />
     </div>
   )
 }

@@ -65,7 +65,6 @@
 @media screen and (max-width: 2560px) and (min-width: 1550px) {
   .news-card {
     width: 32.5rem;
-    height: 50rem;
   }
   .news-card-image {
     height: 20rem;
@@ -80,13 +79,14 @@
     word-wrap: break-word;
   }
   .news-card-text {
-    height: 10rem;
+    height: 12rem;
   }
   .read-more {
     height: 5rem;
   }
   .news-card-title {
-    font-size: 2.75rem;
+    font-size: 2.4rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     height: 10rem;
     overflow-y: hidden;
@@ -109,7 +109,6 @@
 @media screen and (max-width: 768px) {
   .news-card {
     width: 25.5rem;
-    height: 40rem;
   }
   .news-card-image {
     height: 15rem;
@@ -124,25 +123,26 @@
     word-wrap: break-word;
   }
   .news-card-text {
-    height: 10rem;
+    height: 7rem;
   }
   .read-more {
     height: 5rem;
   }
   .news-card-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
-    height: 8rem;
+    margin-top: 2rem;
+    height: 5rem;
     overflow-y: hidden;
     text-wrap: wrap;
     word-wrap: break-word;
   }
   .news-card-text {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
   .read-more {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
   .text-muted {
@@ -150,10 +150,9 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 550px) {
   .news-card {
-    width: 20rem;
-    height: 35rem;
+    width: 19rem;
   }
   .news-card-image {
     height: 12.5rem;
@@ -168,36 +167,35 @@
     word-wrap: break-word;
   }
   .news-card-text {
-    height: 8rem;
+    height: 5rem;
   }
   .read-more {
     height: 5rem;
   }
   .news-card-title {
-    font-size: 1.65rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
     height: 6rem;
     overflow-y: hidden;
     text-wrap: wrap;
     word-wrap: break-word;
   }
   .news-card-text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
   .read-more {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
   .text-muted {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
 @media screen and (max-width: 350px) {
   .news-card {
-    width: 16rem;
-    height: 28rem;
+    width: 14rem;
   }
   .news-card-image {
     height: 9rem;
@@ -211,29 +209,27 @@
     text-wrap: wrap;
     word-wrap: break-word;
   }
-  .news-card-text {
-    height: 6.5rem;
-  }
   .read-more {
     height: 5rem;
   }
   .news-card-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
-    height: 5rem;
+    height: 4rem;
     overflow-y: hidden;
     text-wrap: wrap;
     word-wrap: break-word;
   }
   .news-card-text {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
+    height: 4rem;
   }
   .read-more {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
   }
   .text-muted {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }

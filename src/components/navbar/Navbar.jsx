@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { RiMenuLine, RiCloseLine } from "react-icons/ri";
+import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import Logo from "../../assets/LOGO.png";
 
@@ -22,22 +22,23 @@ const Menu = () => (
   </>
 );
 
-const Phone_menu = () => (
+const Phone_menu = ({ setToggleMenu }) => (
   <>
-    <ScrollLink to="Home" smooth={true} duration={50} offset={-70}>
+    <ScrollLink to="Home" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>Home</p>
     </ScrollLink>
-    <ScrollLink to="About" smooth={true} duration={50} offset={-70}>
+    <ScrollLink to="About" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>About</p>
     </ScrollLink>
-    <ScrollLink to="Services" smooth={true} duration={50} offset={-70}>
+    <ScrollLink to="Services" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>Services</p>
     </ScrollLink>
-    <ScrollLink to="Articles" smooth={true} duration={50} offset={-70}>
+    <ScrollLink to="Articles" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>Articles</p>
     </ScrollLink>
   </>
 );
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -71,7 +72,7 @@ const Navbar = () => {
               onClick={() => setToggleMenu(false)}
             />
           ) : (
-            <RiMenuLine
+            <RiMenu2Line
               className="open-icon"
               onClick={() => setToggleMenu(true)}
             />
@@ -87,7 +88,7 @@ const Navbar = () => {
             <div className="opacity">
               <div className="navbar-phone-container">
                 <div className="navbar-phone-links">
-                  <Phone_menu />
+                <Phone_menu setToggleMenu={setToggleMenu} />
                   <div className="nav-buttons-phone">
                     <RouterLink to="/login" className="nav-button login">
                       {" "}

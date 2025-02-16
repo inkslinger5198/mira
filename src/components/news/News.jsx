@@ -28,7 +28,7 @@ export class News extends Component {
 
   updatePageSize = () => {
     // Check if max screen width is 1024px, then set pageSize to 3, else to 4
-    const newSize = window.innerWidth <= 1024 ? 3 : 4;
+    const newSize = window.innerWidth <= 1300 ? 3 : 4;
     this.setState({ pageSize: newSize });
   };
 
@@ -92,7 +92,7 @@ export class News extends Component {
     const isNextDisabled = this.state.currentCarouselPage >= Math.ceil(this.state.articles.length / this.state.pageSize) - 1;
 
     return (
-      <div className="home_news " id="article">
+      <div className="home_news " id="Articles">
         <div className="heading">
           Articles
         </div>

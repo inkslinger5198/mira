@@ -168,7 +168,9 @@
   .navbar-phone
   {
     display: flex;
+    width: 100%;
     justify-content: start;
+    
   }
   .navbar-laptop
   {
@@ -182,9 +184,14 @@
   {
     display: none;
   }
+  .opacity
+  {
+    width: 70%;
+  }
   .navbar-phone
   {
     justify-content: space-between;
+    
   }
   .nav-buttons-phone
   {

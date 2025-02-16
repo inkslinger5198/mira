@@ -1,0 +1,194 @@
+
+.FAQ-header {
+  margin: 0rem 0 3.125rem 0rem;
+  text-align: center;
+  font-size: 2.375rem;
+}
+
+.faqs-container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.faq {
+  background-color: white;
+  border: 0.03125rem solid #000000;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 1.25rem 0;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: rgba(128, 128, 128, 0.155);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.575);
+  color: black;
+}
+
+.faq.active::after,
+.faq.active::before {
+  color: var(--color-blue);
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  font-size: 4.375rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: var(--color-dark);
+  top: -0.625rem;
+  left: -1.875rem;
+  transform: rotateY(180deg);
+}
+
+.faq-title
+{
+  font-weight: normal;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.faq.active .faq-title {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.faq-text {
+  display: none;
+  margin: 1.875rem 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0;
+  position: absolute;
+  top: 1.875rem;
+  right: 1.875rem;
+  height: 1.875rem;
+  width: 1.875rem;
+}\
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #000000;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+.faq-toggle .fa-chevron-down {
+  color: #000000;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1445px) {
+  .FAQ-header {
+    font-size: 3.25rem;
+  }
+  .faq-title {
+    font-size: 1.875rem;
+  }
+  .faq.active .faq-title {
+    font-size: 1.9375rem;
+  }
+  .faq-text {
+    font-size: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .FAQ-header {
+    font-size: 1.875rem;
+  }
+  .faq-title {
+    font-size: 1.25rem;
+  }
+  .faq-text {
+    font-size: 0.9375rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .FAQ-header {
+    font-size: 1.625rem;
+  }
+  .faqs-container {
+    width: 80%;
+  }
+  .faq-title {
+    font-size: 1.125rem;
+  }
+  .faq.active .faq-title {
+    font-size: 1.25rem;
+  }
+  .faq-text {
+    font-size: 0.8125rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .FAQ-header {
+    font-size: 1.25rem;
+  }
+  .social-panel-container.visible {
+    transform: translateX(0rem);
+  }
+  .floating-btn {
+    right: 0.625rem;
+  }
+  .faq-title {
+    font-size: 0.9375rem;
+  }
+  .faq.active .faq-title {
+    font-size: 1rem;
+  }
+  .faq-text {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .FAQ-header {
+    font-size: 1.125rem;
+  }
+  .faq-title {
+    font-size: 0.625rem;
+  }
+  .faq-text {
+    font-size: 0.5625rem;
+  }
+  .faq.active .faq-title {
+    font-size: 0.75rem;
+  }
+}
