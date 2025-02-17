@@ -22,8 +22,8 @@
 }
 
 .nav-logo-img img {
-  width: 6rem;
-  height: auto;
+  width: auto;
+  height: 3.5rem;
 }
 .navbar-laptop
 {
@@ -43,7 +43,7 @@
 .nav-link a:hover, .login:hover
 {
   cursor: pointer;
-  color: var(--color-dark);
+  color: var(--color-blue);
 }
 .navbar-phone {
   display: none;

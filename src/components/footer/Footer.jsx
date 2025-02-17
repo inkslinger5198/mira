@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../assets/LOGO.png";
+import logo from "../../assets/MIRALOGO.svg";
 import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {

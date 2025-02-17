@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
-import MIRABOT from "../../assets/MIRABOT2.png";
+import MIRABOT from "../../assets/HEROVECTOR.svg";
 import "./Hero.css";
 
 const Hero = () => {

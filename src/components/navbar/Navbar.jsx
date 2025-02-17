@@ -3,7 +3,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { RiMenu2Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
-import Logo from "../../assets/LOGO.png";
+import Logo from "../../assets/MIRALOGO.svg";
 
 const Menu = () => (
   <>
