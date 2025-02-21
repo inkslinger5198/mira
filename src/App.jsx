@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero, Footer, Navbar, News, FAQ } from './components'
+import { Hero, Footer, About, Navbar, News, FAQ } from './components'
 import './App.css'
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
+      <About />
       <News />
       <FAQ />
       <Footer />
