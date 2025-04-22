@@ -2,3 +2,24 @@
 {
     font-family: var(--font-family);
 }
+
+.Mira {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .mira-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Optional if Mirai needs scroll space */
+  .mira-body > .mirai {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
