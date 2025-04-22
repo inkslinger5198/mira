@@ -1,0 +1,182 @@
+.mirabar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+
+.mirabar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.empty {
+  flex: 1;
+}
+
+.mirabar-modes {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.mirabar-modes .miramode
+{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.mirabar-modes .miramode:hover {
+  cursor: pointer;
+  background-color: #f1f5f9;
+}
+.mirabar-logout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  flex: 1;
+}
+
+.mirabar-profile {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.mirabar-tab {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  top: 80%;
+  right: 3rem;
+  width: fit-content;
+  background-color: var(--color-bg);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5rem;
+  gap: 1rem;
+  z-index: 10;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.mira-user
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.mirabar-phone {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.head
+{
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.mira-name p
+{
+  font-weight: 600;
+}
+
+.mirabar-tab .miramode {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+.mirabar-tab .miramode:hover {
+  cursor: pointer;
+  background-color: #f1f5f9;
+}
+
+.mira-name, .mira-user
+{
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+.mira-user .miramode p
+{
+  padding-left: 0.5rem;
+}
+@media screen and (max-width: 2560px) and (min-width: 2001px) {
+  .mirabar-container {
+    padding: 1rem 2rem 0rem 2rem;
+  }
+  .mirabar-profile {
+    font-size: 4rem;
+  }
+  .mira-name {
+    font-size: 1.2rem;
+  }
+  .miramode
+  {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1500px) {
+  .mirabar-container {
+    padding: 0.8rem 1.5rem 0rem 1.5rem;
+  }
+  .mirabar-profile {
+    font-size: 3.5rem;
+  }
+  .mira-name {
+    font-size: 1.1rem;
+  }
+  .miramode {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 900px) {
+  .mirabar-logout .mira-logbutton-lap {
+    display: none;
+  }
+  .mirabar-tab {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 550px) {
+  .mirabar-phone {
+    display: flex;
+  }
+  .mirabar-modes {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+}
+
+@media screen and (max-width: 320px) {
+}

@@ -1,0 +1,309 @@
+/* Container */
+.container {
+  position: fixed;
+  display: flex;
+  z-index: 10;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100vh;
+  width: fit-content;
+}
+
+/* Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px 0px 5px 0;
+  background-color: white;
+  padding: 1rem;
+  transition: width 0.3s ease;
+}
+
+.sidebar-open {
+  width: fit-content;
+}
+
+.sidebar-closed {
+  width: fit-content;
+}
+
+/* Title Section */
+.title-section {
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom: 1px solid #cbd5e1;
+  width: 100%;
+  display: flex;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.title-container:hover {
+  background-color: #f1f5f9;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  display: grid;
+  place-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  border-radius: 6px;
+}
+
+.logo-container img, title-text img
+{
+  width: auto;
+  height: 3rem;
+}
+
+.logo-svg {
+  fill: white;
+}
+
+.title-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.title-plan {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+
+/* Sidebar Options */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.75rem 0;
+  height: fit-content;
+  width: 100%;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+  color: #64748b;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+}
+
+
+
+.option:hover {
+  background-color: #f1f5f9;
+}
+
+.selected {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+.icon-container {
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  height: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 20px;
+  margin-left: 2px;
+}
+.icons
+{
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.option-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Toggle Button */
+.toggle-close {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #cbd5e1;
+  border: 0px;;
+  background-color: transparent;
+  transition: background 0.3s;
+}
+
+.toggle-close:hover {
+  background-color: #f1f5f9;
+}
+
+.toggle-content {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.chevron-right {
+  transition: transform 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Example Content */
+.content {
+  width: 100%;
+  height: 200vh;
+}
+
+
+@media screen and (max-width:2560px) and (min-width:1500px) {
+  .sidebar
+  {
+    padding: 2rem;
+  }
+   .logo-container img, .title-text img {
+    height: 5rem;
+  }
+
+  .title-section
+  {
+      padding: 2rem 0;
+      margin: 2rem 0;
+    }
+
+  .title-name {
+    font-size: 2rem;
+  }
+
+  .title-plan {
+    font-size: 1.75rem;
+  }
+
+  .option {
+    padding: 1.5rem 0;
+  }
+
+  .icon-container {
+    padding: 0rem 2rem 0rem 2rem;
+    font-size: 2rem;
+  }
+
+  .icons {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .option-text {
+    font-size: 1.75rem;
+  }
+
+  .toggle-content {
+    padding: 1.25rem;
+  }
+
+  .toggle-text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width:2000px) and (min-width:1500px) {
+  .sidebar {
+    padding: 1.5rem;
+  }
+  .logo-container img, .title-text img {
+    height: 4rem;
+  }
+
+  .title-section {
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+  }
+
+  .title-name {
+    font-size: 1.75rem;
+  }
+
+  .title-plan {
+    font-size: 1.5rem;
+  }
+
+  .option {
+    padding: 1rem 0;
+  }
+
+  .icon-container {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .icons {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .option-text {
+    font-size: 1.5rem;
+  }
+
+  .toggle-content {
+    padding: 1rem;
+  }
+
+  .toggle-text {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .icons
+  {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+ 
+}
+
+@media screen and (max-width:550px) {
+ 
+}
+
+@media screen and (max-width:400px) {
+ 
+}
+
+@media screen and (max-width:320px) {
+ 
+}

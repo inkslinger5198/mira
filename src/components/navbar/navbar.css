@@ -22,8 +22,8 @@
 }
 
 .nav-logo-img img {
-  width: auto;
-  height: 3.5rem;
+  width: 8rem;
+  height: auto;
 }
 .navbar-laptop
 {
@@ -96,7 +96,7 @@
 .navbar-phone-container {
   display: flex;
   flex-direction: column;
-  background: var( --color-blueish);
+  background: var(--colour-nav-blue);
   position: absolute;
   top: 0rem;
   left: 0rem;

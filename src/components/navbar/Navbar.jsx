@@ -117,7 +117,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-buttons">
-          <RouterLink to="/login" className="nav-button login">
+          <RouterLink to="/ai" className="nav-button login">
             {" "}
             Login{" "}
           </RouterLink>

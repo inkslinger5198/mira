@@ -5,12 +5,24 @@
 
    --gradient-text: linear-gradient(89deg, rgba(5,59,80,1) 5%, rgba(2,125,172,1) 100%);
   --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --light-grade: linear-gradient(89deg, rgb(160, 182, 191) 5%, rgb(132, 200, 227) 100%);
   
   --color-bg:white;
   --color-dark: #8872f1;
   --color-blue:#19A7CE;
   --color-blueish: #cfe3eb;
+  --colour-nav-blue: #edeffc;
   --color-light: #2a2a2b;
   --color-lighter: #7e7d7d;
   --color-lightest: #cfd0d0;
+}
+
+button
+{
+  all: unset;
+  
+}
+button:hover
+{
+  cursor: pointer;
 }
