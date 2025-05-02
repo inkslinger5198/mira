@@ -1,0 +1,108 @@
+.initial-details-page{
+    z-index:90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #6368ce;
+}
+.initial-details-container{
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    width: 50%;
+    border: 2px solid none;
+    border-radius: 10px;
+    z-index: 100;
+}
+.initial-details-input{
+    position: relative;
+    width: 100%;
+}
+.initial-details-input input[type='text'],textarea{
+    position: relative;
+    border: none;
+    padding: 12px;
+    outline: none;
+    margin: 14px 0;
+    width: 100%;
+    border-bottom: 3px solid grey;
+    margin-right: 5px;
+}
+.initial-details-input input:focus,textarea:focus{
+    border-image: linear-gradient(to right,#4a90e2,#9b5956);
+    border-image-slice: 1;
+}
+.initial-details-input input:focus~label,
+.initial-details-input input:not(:placeholder-shown)~label,
+.initial-details-input textarea:focus~label,
+.initial-details-input textarea:not(:placeholder-shown)~label{
+    top: 10px;
+    font-size: 12px;
+    color: #4a90e2;
+}
+.initial-details-input label{
+    position: absolute;
+    left:0px;
+    top: 50%;
+    font-size: 16px;
+    color: #aaa;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+    background: white;
+    padding: 0 5px;
+}
+.initial-details-sub-btn{
+    background-color: #2D336B;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.initial-details-sub-btn:hover{
+    opacity: 0.9;
+}
+.follow-up{
+    background-image: url('./../assets/pexels-steve.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:inherit;
+    width: 100%;
+}
+.initial-details-form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+@media (max-width:768px){
+    .initial-details-form-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .main-details-form{
+        display: grid;
+        grid-template-columns: auto;
+        border: 4px solid black;
+        gap: 1px;
+    }
+    .main-basic-user-data-page{
+        height: 100%;
+        width: 100%;
+    }
+    .login-basic-input{
+        width: max-content;
+    }
+}
+@media (max-width:430px) {
+    .initial-details-input label{
+        font-size: smaller;
+    }
+    .initial-details-container{
+        width: 90%;
+    }
+}
