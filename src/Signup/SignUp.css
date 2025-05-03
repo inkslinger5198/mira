@@ -59,23 +59,12 @@
     font-size: 15px;
 }
 .log-in-form-btn{
-    background-color: #6368ce;
+    background-color: #3d5afe;
     padding: 12px 20px;
     border-radius: 10px;
     font-weight: bold;
     color: white;
     margin: 10px 0;
-}
-.return-to-home-btn{
-    background-color: #8872F1;
-    padding: 12px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    color: white;
-    margin: 10px 0;
-}
-.log-in-form-btn:hover{
-    background-color: blue;
 }
 .btn-sign-up{
     display: flex;
@@ -94,6 +83,10 @@
     color: #555;
     border: 1px solid #ccc;
 }
+.btn-google:hover{
+    color: white;
+    background-color: blue;
+}
 .login-page-form-image{
     display: flex;
     justify-content: center;
@@ -107,9 +100,6 @@
         gap: 0px;
         padding: 20px;
         margin: 0;
-    }
-    h2{
-        font-size: 18px;
     }
     .login-page-main-form{
         width: 100%;

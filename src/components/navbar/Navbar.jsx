@@ -117,11 +117,14 @@ const Navbar = () => {
           </div>
         </div>
         <div className="nav-buttons">
-          <RouterLink to="/ai" className="nav-button login">
+          <RouterLink to="/login" className="nav-button login">
             {" "}
             Login{" "}
           </RouterLink>
-          <button className="nav-button signup"> Sign Up </button>
+          <RouterLink to="/signup" className="nav-button signup">
+            {" "}
+            Sign Up{" "}
+          </RouterLink>
         </div>
       </div>
     </div>
