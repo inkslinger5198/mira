@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./mirabar.css";
 import { IoPersonCircle } from "react-icons/io5";
 import { useUserMode } from "../../../context/userModeContext.jsx";
-
+import { Link as RouterLink } from "react-router-dom";
 const Mirabar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,7 +35,7 @@ const Mirabar = () => {
 
         <div className="mirabar-logout">
           <div className="mira-logbutton-lap">
-            <button className="nav-button signup">Logout</button>
+            <RouterLink to="/" className="nav-button signup">Logout</RouterLink>
           </div>
           <div className="mira-prof" onClick={toggleMenu}>
             <IoPersonCircle className="mirabar-profile" />
