@@ -29,7 +29,7 @@ const SignUp = () => {
         <div className='login-page'>
           <div className="login-page-main">
             <div className="login-page-main-form">
-                <h2 className='text-center text-[20px] md:text-[30px] font-bold'>Login</h2>
+                <h2 className='text-center text-[20px] md:text-[30px] font-bold'>Sign Up</h2>
                 <label for="username" className='text-[#b8b7b7] text-[12px] md:[text-15px]'>Name</label>
                 <input type="text" id="name" onChange={(e)=>{setName(e.target.value)}} className='text-[12px] md:text-[15px]'></input>
                 <label for="username" className='text-[#b8b7b7] text-[12px] md:text-[15px]'>Email ID</label>
@@ -47,7 +47,7 @@ const SignUp = () => {
                 <RouterLink to="/login" className='log-in-form-btn text-center'>
                  Continue
                 </RouterLink>
-                <RouterLink to="/login" className='log-in-form-btn btn-google text-center text-[13px]'>Already Registred? Sign In</RouterLink>
+                <RouterLink to="/login" className='log-in-form-btn btn-google text-center text-[13px]'>Already Registred? Log In</RouterLink>
                 <RouterLink to="/" className='log-in-form-btn text-center bg-[#8872F1]'>Return To Home</RouterLink>
             </div>
             <div className="login-page-form-image">

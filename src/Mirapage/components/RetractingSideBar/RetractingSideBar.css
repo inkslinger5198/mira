@@ -70,9 +70,9 @@
 }
 
 .logo-container img,
-title-text img {
+.title-text img {
   width: auto;
-  height: 3rem;
+  height: 2.5rem;
 }
 
 .logo-svg {
