@@ -2,7 +2,7 @@ import React from "react";
 import "./footer.css";
 import logo from "../../assets/MIRALOGO.svg";
 import { Link as ScrollLink } from "react-scroll";
-
+import { Route, Link as RouterLink } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer section__padding">
@@ -21,8 +21,8 @@ const Footer = () => {
           </div>
           <div className="quick-links fal">
             <h3 className="fah">Quick Links</h3>
-            <a href='/' className="fab">Sign Up</a>
-            <a href='/' className="fab">Login</a>
+            <RouterLink to="/signup" className="fab">Sign Up</RouterLink>
+            <RouterLink to="/login" className="fab">Login</RouterLink>
           </div>
           <div className="footer-links fal">
             <h3 className="fah">Navigate</h3>

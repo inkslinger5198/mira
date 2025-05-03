@@ -7,6 +7,7 @@ import Mira from "./Mirapage/Mira.jsx";
 import { UserModeProvider } from "./context/userModeContext.jsx";
 import Login from "./Login/Login.jsx";
 import FollowUp from "./FollowUp/FollowUp.jsx";
+import SignUp from "./Signup/SignUp.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HashRouter>
@@ -33,6 +34,11 @@ createRoot(document.getElementById("root")).render(
         <Route exact path="/followup" element={
           <UserModeProvider>
             <FollowUp/>
+          </UserModeProvider>
+        }/>
+        <Route exact path="/signup" element={
+          <UserModeProvider>
+            <SignUp/>
           </UserModeProvider>
         }/>
       </Routes>
