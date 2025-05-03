@@ -20,20 +20,50 @@
 .empty {
   flex: 1;
 }
+.mirabar-chatmodes {
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
+.mirabar-chatmodes-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.mirabar-chatmodes-title p {
+  font-size: calc(1rem + (1.2 - 1) * (100vw - 320px) / (1920 - 320));
+  font-weight: 600;
+}
 .mirabar-modes {
   align-self: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  max-width: fit-content;
   flex: 1;
+  gap: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.miramode.active-mode {
+  background-color: #e5f1fd;
+  color: #003366;
+  font-weight: 600;
+  border: 1px solid #e5f1fd;
 }
 
 .mirabar-modes .miramode {
-  padding: calc(0.3rem + (0.5 - 0.3) * (100vw - 320px) / (1920 - 320)) 
-           calc(0.8rem + (1 - 0.8) * (100vw - 320px) / (1920 - 320));
+  padding: calc(0.3rem + (0.5 - 0.3) * (100vw - 320px) / (1920 - 320))
+    calc(0.8rem + (1 - 0.8) * (100vw - 320px) / (1920 - 320));
   border-radius: 5px;
   font-size: calc(1rem + (1.1 - 0.8) * (100vw - 320px) / (1920 - 320));
 }
@@ -135,14 +165,14 @@
   }
 
   .mirabar-modes .miramode {
-    padding: calc(0.5rem + (0.7 - 0.5) * (2560px - 320px) / (1920 - 320)) 
-             calc(1rem + (1.2 - 1) * (2560px - 320px) / (1920 - 320));
+    padding: calc(0.5rem + (0.7 - 0.5) * (2560px - 320px) / (1920 - 320))
+      calc(1rem + (1.2 - 1) * (2560px - 320px) / (1920 - 320));
     font-size: calc(1.75rem + (1.3 - 1) * (2560px - 320px) / (1920 - 320));
   }
 
   .miramode {
-    padding: calc(0.7rem + (0.9 - 0.7) * (2560px - 320px) / (1920 - 320)) 
-             calc(1.2rem + (1.4 - 1.2) * (2560px - 320px) / (1920 - 320));
+    padding: calc(0.7rem + (0.9 - 0.7) * (2560px - 320px) / (1920 - 320))
+      calc(1.2rem + (1.4 - 1.2) * (2560px - 320px) / (1920 - 320));
     font-size: calc(2.5rem + (1.8 - 1.5) * (2560px - 320px) / (1920 - 320));
   }
 
@@ -171,6 +201,11 @@
     font-size: calc(1.5rem + (1.7 - 1.5) * (2560px - 320px) / (1920 - 320));
   }
 }
+@media screen and (max-width: 2560px) and (min-width: 1500px) {
+  .mirabar-chatmodes-title p {
+    font-size: calc(2rem + (1.2 - 1) * (100vw - 320px) / (1920 - 320));
+  }
+}
 @media screen and (max-width: 900px) {
   .mirabar-logout .mira-logbutton-lap {
     display: none;
@@ -184,7 +219,8 @@
   .mirabar-phone {
     display: flex;
   }
-  .mirabar-modes {
+  .mirabar-modes,
+  .mirabar-chatmodes-title {
     display: none;
   }
 }

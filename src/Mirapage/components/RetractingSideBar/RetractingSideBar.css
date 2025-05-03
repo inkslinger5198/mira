@@ -73,6 +73,8 @@
 .title-text img {
   width: auto;
   height: 2.5rem;
+
+  
 }
 
 .logo-svg {
@@ -201,13 +203,13 @@
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 2560px) and (min-width: 1500px) {
+@media screen and (max-width: 2560px) and (min-width: 2000px) {
   .sidebar {
     padding: 2rem;
   }
   .logo-container img,
   .title-text img {
-    height: 5rem;
+    height: 4.5rem;
   }
 
   .title-section {
@@ -255,7 +257,7 @@
   }
   .logo-container img,
   .title-text img {
-    height: 4rem;
+    height: 3.5rem;
   }
 
   .title-section {

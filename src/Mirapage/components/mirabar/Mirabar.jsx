@@ -21,21 +21,38 @@ const Mirabar = () => {
     setMenuOpen(false);
   };
 
+  const [activeChatMode, setActiveChatMode] = useState("Medical"); // Default to Medical
+
   return (
     <div className="mirabar-container">
       <div className="mirabar">
         <div className="empty"></div>
 
         {/* Desktop Modes */}
-        <div className="mirabar-modes">
-          <button className="miramode">Medical</button>
-          <button className="miramode">Ayurvedic</button>
-          <button className="miramode">Yoga</button>
+        <div className="mirabar-chatmodes">
+          <div className="mirabar-chatmodes-title">
+            <p>CHAT MODE</p>
+          </div>
+          <div className="mirabar-modes">
+            {["Medical", "Ayurvedic", "Yoga"].map((mode) => (
+              <button
+                key={mode}
+                className={`miramode ${
+                  activeChatMode === mode ? "active-mode" : ""
+                }`}
+                onClick={() => setActiveChatMode(mode)}
+              >
+                {mode}
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="mirabar-logout">
           <div className="mira-logbutton-lap">
-            <RouterLink to="/" className="nav-button signup">Logout</RouterLink>
+            <RouterLink to="/" className="nav-button signup">
+              Logout
+            </RouterLink>
           </div>
           <div className="mira-prof" onClick={toggleMenu}>
             <IoPersonCircle className="mirabar-profile" />
@@ -49,7 +66,7 @@ const Mirabar = () => {
 
               {/* Mobile/Phone view - Modes inside dropdown */}
               <div className="mirabar-phone">
-                <p className="head">Search Mode</p>
+                <p className="head">Chat Mode</p>
                 <button className="miramode" onClick={handleMenuItemClick}>
                   Medical
                 </button>
