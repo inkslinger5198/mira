@@ -17,30 +17,35 @@ const FAQ = () => {
 
   const faqData = [
     {
-      title: "What is your refund policy?",
+      title: "What is Mira?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Mira is a smart conversational AI assistant that adapts its user interface and interaction style based on your selected mode—Child, Adult, or Senior—offering a personalized and accessible experience for all age groups.",
     },
     {
-      title: "How can I contact customer support?",
+      title: "How does Mira adapt to different age groups?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Mira customizes the layout, font size, colors, and even interaction elements (like mic buttons or text boxes) based on the selected user mode. This ensures that children get a fun, simplified UI, adults get a standard interface, and seniors benefit from larger fonts and clearer visuals.",
     },
     {
-      title: "Can I change or cancel my order after placing it?",
+      title: "Can I change the user mode after selecting one?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Yes! You can easily switch between modes using the dropdown menu in the navigation bar. The interface updates instantly to reflect the selected mode.",
     },
     {
-      title: "Can I change or cancel my order after placing it?",
+      title: "Is Mira available as a mobile app?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Yes, Mira is available as a web application. You can access it via your browser on desktop or mobile, and it’s optimized for responsive use. You can also download the app from your device browser.",
     },
     {
-      title: "What payment methods do you accept?",
+      title: "What can I talk to Mira about?",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Mira is designed to assist with general queries, daily tasks, fun interactions, and more. Its capabilities vary slightly depending on the user mode to provide age-appropriate responses and interactions.",
     },
+    {
+      title: "Do I need to pay for using Mira?",
+      content:
+        "Mira is free to use for all users. We believe in providing accessible technology and healthcare to everyone, regardless of age or background.",
+    }
   ];
 
   const FaqItem = ({ title, content }) => (

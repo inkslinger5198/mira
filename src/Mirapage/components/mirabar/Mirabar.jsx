@@ -3,6 +3,7 @@ import "./mirabar.css";
 import { IoPersonCircle } from "react-icons/io5";
 import { useUserMode } from "../../../context/userModeContext.jsx";
 import { Link as RouterLink } from "react-router-dom";
+
 const Mirabar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -110,12 +111,13 @@ const Mirabar = () => {
               </div>
               {/* Logout button in dropdown */}
               <div className="mira-logbutton">
-                <button
+                <RouterLink
+                  to="/"
                   className="nav-button signup"
                   onClick={handleMenuItemClick}
                 >
                   Logout
-                </button>
+                </RouterLink>
               </div>
             </div>
           )}

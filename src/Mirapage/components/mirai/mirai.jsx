@@ -3,6 +3,7 @@ import "./mirai.css";
 import { useUserMode } from "../../../context/userModeContext.jsx";
 import { FaMicrophone } from "react-icons/fa";
 
+
 const Mirai = () => {
   const { mode } = useUserMode();
 
