@@ -44,7 +44,6 @@ const RetractingSideBar = () => {
         )}
       </AnimatePresence>
 
-      <ExampleContent />
     </div>
   );
 };
@@ -144,4 +143,3 @@ const ToggleClose = ({ open, setOpen }) => (
   </motion.button>
 );
 
-const ExampleContent = () => <div className="content"></div>;
