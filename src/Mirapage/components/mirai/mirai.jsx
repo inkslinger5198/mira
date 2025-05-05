@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./mirai.css";
 import { useUserMode } from "../../../context/userModeContext.jsx";
 import { FaMicrophone } from "react-icons/fa";
+import Mirabar from "../mirabar/Mirabar.jsx";
+import Warning from "../warning/Warning.jsx";
 
 
 const Mirai = () => {
@@ -36,6 +38,7 @@ const Mirai = () => {
 
   return (
     <div className="mirai">
+      <Mirabar />
       <div className="mirai-container">
         {mode === "adult" && (
           <div className="adult-mode">
@@ -100,6 +103,7 @@ const Mirai = () => {
           </div>
         )}
       </div>
+      <Warning />
     </div>
   );
 };

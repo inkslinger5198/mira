@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import MIRABOT from "../../assets/HEROVECTOR.svg";
+import { Link as RouterLink } from "react-router-dom";
 import "./Hero.css";
 
 const Hero = () => {
@@ -13,7 +14,8 @@ const Hero = () => {
           exercises, instant reminders, and alerts based on your wellness
           goals—keeping you on track without missing a beat.{" "}
         </div>
-        <div className="cta">Chat about symptoms</div>
+        <div className="cta">
+          <RouterLink to="/login">Chat about symptoms</RouterLink></div>
       </div>
       <div className="hero_image">
         <img src={MIRABOT} className="hero_img" alt="hero" />

@@ -13,8 +13,8 @@ const Menu = () => (
     <ScrollLink to="About" smooth={true} duration={50} offset={-70}>
       <p>About</p>
     </ScrollLink>
-    <ScrollLink to="Services" smooth={true} duration={50} offset={-70}>
-      <p>Services</p>
+    <ScrollLink to="faq" smooth={true} duration={50} offset={-70}>
+      <p>FAQ</p>
     </ScrollLink>
     <ScrollLink to="Articles" smooth={true} duration={50} offset={-70}>
       <p>Articles</p>
@@ -30,8 +30,8 @@ const Phone_menu = ({ setToggleMenu }) => (
     <ScrollLink to="About" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>About</p>
     </ScrollLink>
-    <ScrollLink to="Services" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
-      <p>Services</p>
+    <ScrollLink to="faq" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
+      <p>FAQ</p>
     </ScrollLink>
     <ScrollLink to="Articles" smooth={true} duration={50} offset={-70} onClick={() => setToggleMenu(false)}>
       <p>Articles</p>

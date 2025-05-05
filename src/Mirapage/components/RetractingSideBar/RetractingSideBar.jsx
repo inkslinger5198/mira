@@ -11,7 +11,8 @@ import {
   FiUsers,
   FiX,
 } from "react-icons/fi";
-import { RiMenu2Line } from "react-icons/ri";
+
+import { RiMenu2Line, RiChatVoiceAiFill } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import "./RetractingSideBar.css";
 import Logo from "../../../assets/MIRAICON.svg";
@@ -65,13 +66,15 @@ const Sidebar = ({ open, setOpen }) => {
       <TitleSection open={open} />
       <div className="options">
         {[
-          { title: "Dashboard", Icon: FiHome },
-          { title: "Prescription", Icon: FiDollarSign, notifs: 3 },
-          { title: "Lorem", Icon: FiMonitor },
-          { title: "Ipsum", Icon: FiShoppingCart },
-          { title: "Dolor", Icon: FiTag },
-          { title: "Set", Icon: FiBarChart },
-          { title: "Lorem", Icon: FiUsers },
+          { title: "Headache Solutions", Icon: RiChatVoiceAiFill },
+          { title: "Muscle Strain Treatment", Icon: RiChatVoiceAiFill },
+          { title: "Ayurvedic Stress Relief Tips", Icon: RiChatVoiceAiFill },
+          // { title: "Prescription", Icon: FiDollarSign, notifs: 3 },
+          // { title: "Lorem", Icon: FiMonitor },
+          // { title: "Ipsum", Icon: FiShoppingCart },
+          // { title: "Dolor", Icon: FiTag },
+          // { title: "Set", Icon: FiBarChart },
+          // { title: "Lorem", Icon: FiUsers },
         ].map(({ title, Icon, notifs }) => (
           <Option
             key={title}

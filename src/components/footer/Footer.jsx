@@ -17,12 +17,23 @@ const Footer = () => {
         <div className="footer-right">
           <div className="contact fal">
             <h3 className="fah">Contact Us</h3>
-            <a href="/" className="email fab">Email</a>            
+            <a
+              href="mailto:vandana3@s.amity.edu"
+              target="_blank"
+              rel="noreferrer"
+              className="email fab"
+            >
+              Email
+            </a>
           </div>
           <div className="quick-links fal">
             <h3 className="fah">Quick Links</h3>
-            <RouterLink to="/signup" className="fab">Sign Up</RouterLink>
-            <RouterLink to="/login" className="fab">Login</RouterLink>
+            <RouterLink to="/signup" className="fab">
+              Sign Up
+            </RouterLink>
+            <RouterLink to="/login" className="fab">
+              Login
+            </RouterLink>
           </div>
           <div className="footer-links fal">
             <h3 className="fah">Navigate</h3>
@@ -32,8 +43,8 @@ const Footer = () => {
             <ScrollLink to="About" smooth={true} duration={50} offset={-70}>
               <p className="fab">About</p>
             </ScrollLink>
-            <ScrollLink to="Services" smooth={true} duration={50} offset={-70}>
-              <p className="fab">Services</p>
+            <ScrollLink to="faq" smooth={true} duration={50} offset={-70}>
+              <p className="fab">FAQ</p>
             </ScrollLink>
             <ScrollLink to="Articles" smooth={true} duration={50} offset={-70}>
               <p className="fab">Articles</p>
@@ -43,7 +54,7 @@ const Footer = () => {
       </div>
       <div className="line"></div>
       <div className="footer-bottom">
-        <p className="text">© MIRA - All Rights Reserved</p>
+        <p className="footer-text">© MIRA - All Rights Reserved</p>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Mirabar = () => {
             <p>CHAT MODE</p>
           </div>
           <div className="mirabar-modes">
-            {["Medical", "Ayurvedic", "Yoga"].map((mode) => (
+            {["Medical", "Ayurvedic", "Home Remedies"].map((mode) => (
               <button
                 key={mode}
                 className={`miramode ${
@@ -75,7 +75,7 @@ const Mirabar = () => {
                   Ayurvedic
                 </button>
                 <button className="miramode" onClick={handleMenuItemClick}>
-                  Yoga
+                  Home Remedy
                 </button>
               </div>
 

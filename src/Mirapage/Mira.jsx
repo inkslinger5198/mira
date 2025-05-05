@@ -10,12 +10,11 @@ import {
 const Mira = () => {
   return (
     <div className="Mira">
-      <Mirabar />
+      
       
       <div className="mira-body">
         <Sidebar />
-        <Mirai />
-        <Warning />
+        <Mirai />        
       </div>
 
       

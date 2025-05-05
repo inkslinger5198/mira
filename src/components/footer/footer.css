@@ -24,7 +24,7 @@
 }
 
 .footer-left img {
-  height: 5rem;
+  height: 4rem;
   width: auto;
 }
 
@@ -48,6 +48,7 @@
 .fah
 {
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 .fab
 {
